@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sheepop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-light border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+
+                <li><a class="dropdown-item" href="#">Action2</a></li>
+
+                <li><a class="dropdown-item" href="#">Action3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>ประกาศ</strong> ร้านจัดโปรโมชั่น
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
+          <li class="breadcrumb-item"><a href="#">หมวดหมู่ของสินค้า</a></li>
+          <li class="breadcrumb-item active" aria-current="page">bread</li>
+        </ol>
+      </nav>
+
+      <div class="row">
+        
+        <div class="col-md-8">
+          
+          <div id="productCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner border">
+              <div class="carousel-item active">
+                <img src="https://i.ytimg.com/vi/hYuc9kW2OfA/maxresdefault.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.jocooks.com/wp-content/uploads/2020/03/white-bread-1-18.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://theloopywhisk.com/wp-content/uploads/2024/08/Gluten-Free-Sandwich-Bread_1200px-2.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <h5 class="mb-3">ขนมปัง</h5>
+          <div class="accordion" id="productAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  รายละเอียด
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#productAccordion">
+                <div class="accordion-body">
+                  อร่อย<br>สด<br>สะอาด
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  คุณสมบัติสินค้า
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                <div class="accordion-body">
+                  กินแล้วฉลาด                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                  ตารางค่าจัดส่ง
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                <div class="accordion-body">
+                  ฟรี
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <div class="col-md-4">
+          
+          <h2 class="fw-bold">รายละเอียด <span class="badge rounded-pill text-bg-light border text-dark fs-6">ใหม่</span></h2>
+          
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <span class="text-dark ms-1">5</span>
+            </div>
+            <div>
+              <i class="bi bi-share me-2"></i>
+              <i class="bi bi-heart"></i>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between mb-3 border-bottom pb-2">
+            <a href="#" class="text-decoration-none">หมวดหมู่ของสินค้า</a>
+            <span class="text-muted"><i class="bi bi-truck"></i> ฟรีค่าส่ง</span>
+          </div>
+
+          <h1 class="fw-bold mb-3">฿1,000 <small class="fs-6 fw-normal text-muted float-end"><a href="#">Breadkery</a></small></h1>
+
+          <div class="mb-3">
+            <label class="form-label">จำนวน</label>
+            <div class="input-group" style="width: 150px;">
+              <button class="btn btn-outline-secondary" type="button">-</button>
+              <input type="text" class="form-control text-center" value="1">
+              <button class="btn btn-outline-secondary" type="button">+</button>
+            </div>
+          </div>
+
+          <button class="btn btn-outline-dark w-100 mb-5 p-2">
+            <i class="bi bi-cart"></i> ใส่ตะกร้าสินค้า
+          </button>
+
+          <h6 class="text-muted">โฆษณา</h6>
+          <div class="card">
+            <img src="https://www.foodandwine.com/thmb/Z2AE53BGYP2U-kXhtbVwXZQX8sc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Perfect-Sandwich-Bread-FT-RECIPE0723-dace53e15a304942acbc880b0ae34f5a.jpg" class="card-img-top p-3" alt="...">
+            <div class="card-body border-top">
+              <h5 class="card-title">ขนมปังปิ้ง</h5>
+              <p class="card-text fw-bold">999฿</p>
+            </div>
+          </div>
+
+        </div> </div> </div> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
