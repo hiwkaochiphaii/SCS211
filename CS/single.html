@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS211</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-dark " style="background-color: #ffffff;" fixed-top>
+        <div class="container">
+            <img class="d-lg-block d-md-none d-sm-none d-none my-1" src="https://cs.vru.ac.th/images/css.png"
+                height="70">
+            <a class="navbar-brand fw-bold fs-4 text-dark" href="#hero">วิทยาการคอมพิวเตอร์</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#hero">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button"
+                            data-bs-toggle="dropdown">เกี่ยวกับหลักสูตร</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="info.html">เนื้อหาหลักสูตร</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">อาจารย์และบุคลากร</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">นักศึกษา</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">บทความ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#contact">ติดต่อเรา</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 600px;">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=600&fit=crop"
+                    class="d-block w-100 h-100" style="object-fit: cover;" alt="Coding">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100"
+                    style="top: 0; bottom: 0;">
+                    <div class="text-center">
+                        <h1 class="display-2 fw-bold mb-4">มหาวิทยาลัยวไลยอลงกรณ์</h1>
+                        <p class="lead fs-3 fw-bold">CS VRU - สาขาวิทยาการคอมพิวเตอร์</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="height: 600px;">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&h=600&fit=crop"
+                    class="d-block w-100 h-100" style="object-fit: cover;" alt="Technology">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100"
+                    style="top: 0; bottom: 0;">
+                    <div class="text-center">
+                        <h1 class="display-2 fw-bold mb-4">เรียนรู้เทคโนโลยี</h1>
+                        <p class="lead fs-3 fw-bold">สร้างสรรค์อนาคต</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="height: 600px;">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&h=600&fit=crop"
+                    class="d-block w-100 h-100" style="object-fit: cover;" alt="Innovation">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100"
+                    style="top: 0; bottom: 0;">
+                    <div class="text-center">
+                        <h1 class="display-2 fw-bold mb-4">นวัตกรรมและการพัฒนา</h1>
+                        <p class="lead fs-3 fw-bold">พร้อมก้าวสู่ดิจิทัล</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold text-primary mb-5">Computer Science</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="text-center fs-5 lh-lg">คณะวิทยาศาสตร์และเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Section -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card h-100 border-0">
+                <div class="card-body text-center">
+                    <img class="img-thumbnail" src="https://cs.vru.ac.th/images/tcas/pr-2020-05-14.jpg"></i>
+                    <h3 class="h4 text-primary mb-3">รับสมัครนักศึกษา (ปริญญาตรีภาคจันทร์-ศุกร์ และภาคเสาร์-อาทิตย์)
+                    </h3>
+                    <p class="card-text fs-4">หลักสูตรวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยี
+                        มหาวิทยาลัยราชภัฏวไลยอลงกรณ์ ในพระบรมราชูปถัมภ์ รับสมัครนักศึกษา TCAS 68 (ปริญญาตรี จันทร์-ศุกร์
+                        และภาคเสาร์-อาทิตย์) ตั้งแต่วันนี้เป็นต้นไป ดูรายละเอียดและกรอกใบสมัครได้ที่นี่</p>
+                </div>
+            </div>
+        </div>
+
+
+        <section id="daiirean" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center display-5 fw-bold text-primary mb-5"> สิ่งที่คุณจะได้เรียนในวิทยาการคอมพิวเตอร์
+                </h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <img class="text-center fs-5 lh-lg" src="https://cs.vru.ac.th/images/technology-stack.jpg">
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </section>
+
+
+
+
+    <section id="daiirean" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold text-primary mb-5"> Technology Stack แต่ละชั้นปีเรียนอะไร</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="table-responsive bg-white">
+                        <table class="table table-striped">
+                            <thead class="">
+                                <tr>
+                                    <th style="min-width: 70px;">ชั้นปี</th>
+                                    <th>ภาคปฏิบัติ</th>
+                                    <th>ภาคทฤษฎี</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>การเขียนโปรแกรมพื้นฐาน เช่น C Python รวมไปถึงการพัฒนา Web Frontend เช่น HTML CSS
+                                        JS, Bootstrap, Basic PHP รวมถึงหัดใช้งาน git service </td>
+                                    <td>Algorithm, Data Structure, Computer Architecture, Operating System, System
+                                        Analysis and Design</td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>การเขียนโปรแกรมที่ซับซ้อนเพิ่มขึ้นอย่างภาษา Object Oriented เช่น ตระกูล java
+                                        รวมไปถึงฐานข้อมูลต่างๆ ที่อยู่ในความนิยมทั้งรูปมีโครงสร้างตระกูล SQL
+                                        และไร้โครงสร้าง NoSQL รวมทั้งใช้งานเครื่องมือ Full Stack Framework
+                                        ที่เป็นที่นิยม </td>
+                                    <td>Network, Data Communication, Software Engineering, Security</td>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td>ทำระบบที่มีการนำ Backend และ Frondend มารวมกัน ทั้งในรูปแบบ Web Application
+                                        ในกรณีศึกษาต่างๆ , การพัฒนา Mobile Application ด้วยเครื่องที่มีมีความทันสมัย,
+                                        Internet Of Thing หรือแม้กระทั่ง Desktop Application</td>
+                                    <td>ระเบียบวิธีวิจัย การประยุกต์ร่วมกับชุมชน วิทยาการคอมพิวเตอร์กับการบริการชุมชน
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <td>ระบบ Infrastucture on cloud ต่างๆ ซึ่งมีอยู่ด้วยกันหลายค่าย การ deploy ด้วย
+                                        Docker และ Kubernetes รวมไปถึงความรู้พื้นฐานเกี่ยวกับ data science
+                                        และปัญญาประดิษฐ์ </td>
+                                    <td>ความรู้พื้นฐานเกี่ยวกับ data science และปัญญาประดิษฐ์ และวิชาเลือกเสรี</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="news" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold text-primary mb-5"> ติดตามข่าวสารการสมัครได้ที่นี่</h2>
+            <div class="row g-4">
+                <p class="fs-5 text-secondary mb-2 text-center">หลักจากที่คุณได้สมัครเข้ามาแล้ว
+                    คุณสามารถติดตามข่าวสารการสมัครของคุณ รวมถึงการประกาศต่างๆ จากทางมหาวิทยาลัยอย่างใกล้ชิดให้ที่ Line
+                    กลุ่มของหลักสูตร โดยจะแบ่งเป็น 2 กลุ่ม ได้แก่</p>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+
+<section>
+    <div class="row text-center">
+            <div class="col-lg-6 mb-4">
+                <img class="img-thumbnail" src="https://cs.vru.ac.th/images/tcas/Line69-Mon-Fri.jpg" style="max-width:300px; width:100%;">
+                <div><strong>CS-VRU#69 (จันทร์-ศุกร์)</strong></div>
+                <div><a href="https://line.me/R/ti/g/nXrUsbdwp6">https://line.me/R/ti/g/nXrUsbdwp6</a></div>
+
+            </div>
+
+<div class="col-lg-6 mb-4">
+                <img class="img-thumbnail" src="https://cs.vru.ac.th/images/tcas/Line69-Sat-Sun.jpg" style="max-width:300px; width:100%;">
+                <div><strong>CS-VRU#69 (เสาร์-อาทิตย์)</strong></div>
+                <div><a href="https://line.me/R/ti/g/8TTT4FLvnH">https://line.me/R/ti/g/8TTT4FLvnH</a></div>
+            </div>  
+
+</section>
+
+    <section id="comment" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold text-primary mb-5">ความคิดเห็นจากนักศึกษา</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <p class="fst-italic text-secondary mb-3">"สอนดีมาก"</p>
+                            <p class="fw-bold text-primary mb-0">- คุณสมชาย ใจดี</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <p class="fst-italic text-secondary mb-3">"อาหารอร่อย"</p>
+                            <p class="fw-bold text-primary mb-0">- คุณสมหญิง รักดี</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <p class="fst-italic text-secondary mb-3">"อจ.เป็นมืออาชีพ"</p>
+                            <p class="fw-bold text-primary mb-0">- คุณวิชัย มั่นคง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center display-5 fw-bold text-primary mb-5">ติดต่อเรา</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h3 class="text-primary mb-4">ข้อมูลการติดต่อ</h3>
+                    <p class="fs-5 mb-3">
+                        <i class="bi bi-geo-alt-fill me-2 text-primary"></i>ที่อยู่ VRU
+                    </p>
+                    <p class="fs-5 mb-3">
+                        <i class="bi bi-telephone-fill me-2 text-primary"></i>โทรศัพท์: 02-123-4567
+                    </p>
+                    <p class="fs-5 mb-4">
+                        <i class="bi bi-envelope-fill me-2 text-primary"></i>อีเมล: vru@gmail.com
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary rounded-circle me-2"
+                            style="width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary rounded-circle me-2"
+                            style="width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary rounded-circle me-2"
+                            style="width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-primary rounded-circle"
+                            style="width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form onsubmit="handleSubmit(event)">
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="ชื่อของคุณ" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="อีเมล" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control form-control-lg" rows="5" placeholder="ข้อความ"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg rounded-pill px-5">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-2">&copy; 2026 cs vru. All Rights Reserved.</p>
+            <div>
+                <a href="#" class="text-primary text-decoration-none mx-2">Privacy Policy</a>
+                <a href="#" class="text-primary text-decoration-none mx-2">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('ขอบคุณที่ติดต่อเรา! เราจะตอบกลับในเร็วๆ นี้');
+            e.target.reset();
+        }
+    </script>
+</body>
+
+
+<style>
+    * {
+        font-family: "Kanit", sans-serif;
+    }
+
+    body {
+        font-family: "Kanit", sans-serif;
+    }
+</style>
+
+</html>
